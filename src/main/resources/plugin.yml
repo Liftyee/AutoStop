@@ -1,0 +1,3 @@
+main: tyze.bukkit.autostop.App
+name: AutoStop
+version: 1.0
