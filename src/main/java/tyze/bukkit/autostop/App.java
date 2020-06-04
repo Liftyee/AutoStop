@@ -21,10 +21,15 @@ public class App extends JavaPlugin {
                 Calendar cal = Calendar.getInstance();
                 Timestamp now = new Timestamp(cal.getTimeInMillis());
                 String time = df.format(now);
-                if (time.equals("06:00")) {
-                    Bukkit.broadcastMessage("[!] §e累格累格管理員：§c§l伺服器維護時間到了！大約三分鐘就可以進遊戲了。");
-                    Bukkit.broadcastMessage("[!] §e累格累格管理員：§c§l伺服器維護時間到了！大約三分鐘就可以進遊戲了。");
-                    Bukkit.broadcastMessage("[!] §e累格累格管理員：§c§l伺服器維護時間到了！大約三分鐘就可以進遊戲了。");
+                if (time.equals("22:50")) {
+                    Bukkit.broadcastMessage("§c[!] WARNING! §1 The server will shutdown in §e10 §1 minutes! §c[!]");
+                }
+                if (time.equals("22:55")) {
+                    Bukkit.broadcastMessage("§c[!] WARNING! The server will shutdown in 5 minutes! [!]");
+                }
+                if (time.equals("23:00")) {
+                    Bukkit.broadcastMessage("§c[!] The server is shutting down... [!]");
+                    Bukkit.broadcastMessage("Goodbye!");
                     Bukkit.shutdown();
                 }
             }
